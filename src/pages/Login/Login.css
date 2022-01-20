@@ -1,0 +1,71 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin:  auto;
+    height: 100vh;
+    width: max-content;
+    background-color: var(--bgcolor);
+}
+
+.login .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    border: 1px rgba(128, 128, 128, 0.198) solid;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 300px;
+}
+
+.container form input {
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px rgba(128, 128, 128, 0.192) solid;
+}
+
+.container form button {
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.input-group:first-of-type {
+    display: flex;
+    gap: 10px
+}
+
+.input-group div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: gray;
+}
+
+.input-group div input[type=date] {
+    width: 100%;
+    color: rgb(128, 128, 128);
+}
+
+
+
+
+
+
+
+
+

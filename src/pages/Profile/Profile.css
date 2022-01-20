@@ -1,0 +1,105 @@
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: 10px auto;
+}
+
+.profile-cover {
+    min-height: 30%;
+    width: 100%;
+    background-color: #adf;
+    border-radius: 10px;
+    border: 1px rgba(128, 128, 128, 0.15) solid;
+
+    
+}
+
+.picture {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    position: relative;
+    top: -100px;
+    left: 40px;
+    overflow: hidden;
+    border: 1px rgba(128, 128, 128, 0.15) solid;
+
+}
+
+.profile-info {
+    position: relative;
+    width: 60%;
+    margin-top: -200px;
+    margin-left: 250px;
+    padding: 20px 0 20px 10px;
+}
+
+.profile-info h3 {
+    font-size: 1.5rem;
+}
+
+.profile-info p:first-of-type {
+    font-size: .8rem;
+    margin-left: 10px;
+
+}
+
+.profile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 5%;
+    margin-bottom: 20px;
+
+    margin-top: 10px;
+    border-top: 1px rgba(128, 128, 128, 0.15) solid;
+    border-bottom: 1px rgba(128, 128, 128, 0.116) solid;
+
+}
+
+.profile-nav > div {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-nav > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.profile-nav > div > div > p {
+    font-size: .8rem;
+}
+
+.profile-button {
+    display:flex;
+}
+
+.profile-button button {
+    height: 40px;
+    width: 100px;
+    border: 1px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background: rgb(212, 64, 31);
+    background: linear-gradient(
+    324deg,
+    rgba(212, 64, 31, 1) 0%,
+    rgba(44, 190, 200, 1) 100%
+  );
+}
+
+.profile-posts {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+}

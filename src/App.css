@@ -123,15 +123,13 @@ body {
   grid-template-columns: 1fr 1fr;
   margin-top: 10px;
 }
-.newsfeed-col {
-  display: flex;
-  flex-direction: column;
-}
+
 .post {
   margin-bottom: 10px;
   margin-left: 5px;
   padding: 20px;
   width: 355px;
+  height: min-content;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.31);
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.31);
@@ -197,7 +195,7 @@ body {
   flex-direction: column;
   padding: 0 30px;
   gap: 20px;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 

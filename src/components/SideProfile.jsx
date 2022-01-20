@@ -14,7 +14,7 @@ function SideProfile({
                 <div className='side-profile-img' >
                     <img src={photo} alt="" />
                 </div>
-                <h4>{fullname}</h4>
+                <h4 style={{textTransform: "capitalize"}} >{fullname}</h4>
                 <p style={{marginTop:"-10px",fontSize:"15px", color:"#A19B9B"}}>{username}</p>
                 <div className="profile-status">
                     <div className="profile-post">

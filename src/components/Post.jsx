@@ -1,10 +1,9 @@
 import React from "react";
 import { IoHeart, IoChatboxOutline, IoBookmarkOutline, IoEllipsisVertical } from "react-icons/io5";
 
-function Post({ profile, username, section, description, photo }) {
+function Post({ profile, username, section, description, src }) {
     return (
         <div className="post">
-
             <div className="post-header">
                 <img className="mouse-pointer" src={profile} alt="" style={{borderRadius: "100%"}}/>
                 <div className="post-header-name" style={{maxWidth:"210px"}}>
@@ -16,7 +15,7 @@ function Post({ profile, username, section, description, photo }) {
             </div>
             <div className="description">
                 <div className="post-img">
-                <img src={photo} alt="" />
+                <img src={`${src}`} alt="" />
                 </div>
                 
                 <div className="post-text">

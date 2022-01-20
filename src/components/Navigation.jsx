@@ -10,8 +10,17 @@ import {
     IoNotifications,
     IoPeople
  } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
+import { useLogin } from '../helper/db-functions';
 
-function Navigation() {
+function Navigation({show, home}) {
+    let navigate = useNavigate()
+
+    const handleLogout = () => {
+        sessionStorage.clear()
+        navigate('/')
+    }
+
     return (
         <div className='nav'>
             <div className='branding'>
@@ -21,38 +30,38 @@ function Navigation() {
             <div className='search'>
                 <input type="text" placeholder='Search...' /> <IoNotifications className='mouse-pointer' size={30} style={{color:"#2CBEC8"}} /> <IoPeople className='mouse-pointer' size={30} style={{color:"#2CBEC8"}} />
             </div>
-            <div className='create-post'>
-                <button className='mouse-pointer'>
+            {home && <div className='create-post'>
+                <button onClick={show} className='mouse-pointer'>
                     <IoAddCircle size={25} color='white' />
                     <span>Create Post</span>
                 </button>
-            </div>
+            </div>}
             <h4>Menu</h4>
             <div className='menu'>
             
                 <div className="link active" >
                     <IoHome size={24} style={{color:"#2CBEC8"}}/>
-                    <a href="http://">Home</a>
+                    <a href="/home">Home</a>
                 </div>
                 <div className="link">
                     <IoPersonCircle size={24} style={{color:"#2CBEC8"}}/>
-                    <a href="http://">Profile</a>
+                    <a href="/profile">Profile</a>
                 </div>
                 <div className="link">
                     <IoMail size={24} style={{color:"#2CBEC8"}}/>
-                    <a href="http://">Messages</a>
+                    <a href="/message">Messages</a>
                 </div>
                 <div className="link">
                     <IoBookmarks size={24} style={{color:"#2CBEC8"}}/>
-                    <a href="http://">Saved Post</a>
+                    <a href="/save_post">Saved Post</a>
                 </div>
                 <div className="link">
                     <IoSettings size={24} style={{color:"#2CBEC8"}}/> 
-                    <a href="http://">Settings</a>
+                    <a href="/settings">Settings</a>
                 </div>
                 <div className="link">
                     <IoExit size={24} style={{color:"#2CBEC8"}}/>
-                    <a href="http://">Logout</a>
+                    <a onClick={handleLogout} href="/">Logout</a>
                 </div>
             </div>
             <h4>Sponsored</h4>
