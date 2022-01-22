@@ -1,18 +1,17 @@
 .profile-wrapper {
     display: flex;
     flex-direction: column;
-    width: 75vw;
+    width: 1060px;
     margin: 10px auto;
 }
 
 .profile-cover {
     min-height: 30%;
-    width: 100%;
+    width: inherit;
     background-color: #adf;
     border-radius: 10px;
     border: 1px rgba(128, 128, 128, 0.15) solid;
 
-    
 }
 
 .picture {

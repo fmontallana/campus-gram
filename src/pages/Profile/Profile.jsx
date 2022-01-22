@@ -15,7 +15,7 @@ function Profile({
     
     const [details, setDetails] = useState({})
     let session = sessionStorage.length <= 0 ? false : true
-    const coverPic = `url(https://picsum.photos/seed/${details.userID}2/1000/200)`
+    const coverPic = `url(https://picsum.photos/seed/${details.userID}2/1070/300)`
     const profilePic = `https://i.pravatar.cc/200?u=${details.userID}`
 
     useEffect(()=>{
